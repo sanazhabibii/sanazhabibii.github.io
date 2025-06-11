@@ -155,12 +155,13 @@ h6 {
 
 .header .logo {
   line-height: 1;
+  min-width: 50px;
 }
 
-.header .logo img {
+/* .header .logo img {
   max-height: 36px;
   margin-right: 8px;
-}
+} */
 
 .header .logo h1 {
   font-size: 32px;
