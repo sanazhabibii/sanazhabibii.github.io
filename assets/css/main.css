@@ -1424,3 +1424,17 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.qavo-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.qavo-list li::marker {
+  color: #ab7969; /* White bullet color */
+}
+
+.qavo-list .slogan {
+  font-style: italic;
+  opacity: 0.8;
+}
