@@ -1037,6 +1037,12 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
 .services .service-item {
   background-color: var(--surface-color);
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
@@ -1079,22 +1085,6 @@ section,
   opacity: 1;
 }
 
-/* Hover effect: bounce animation on icon and fill color changes */
-/* .services .service-item:hover {
-  box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
-}
-
-.services .service-item:hover .icon i,
-.services .service-item:hover .icon svg {
-  animation: bounceAnim 0.6s ease-in-out;
-  opacity: 1 !important; /* prevent fading */
-/* } */
-
-/* .services .service-item:hover .icon path {
-  opacity: 1 !important;
-  transition: fill 0.3s ease-in-out !important;
-} */
-
 /* Color variants */
 .services .service-item.item-cyan i {
   color: #0dcaf0;
@@ -1131,7 +1121,6 @@ section,
 .services .service-item.item-indigo i {
   color: #6610f2;
 }
-.services .service-item.item-indigo:hover .icon i {
 
 .services .service-item.item-indigo:hover .icon path {
   fill: #6610f2;
