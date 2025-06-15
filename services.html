@@ -2,24 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services - Sanaz Habibi</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <meta
+      name="description"
+      content="Design services by Sanaz Habibi including brand identity, UI/UX, web, and communication design."
+    />
+    <meta
+      name="keywords"
+      content="Sanaz Habibi, design services, branding, web design, UX, UI, communication"
+    />
 
-    <!-- Favicons -->
     <link href="assets/img/logo.svg" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Vendor CSS Files -->
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
@@ -34,114 +37,108 @@
       href="assets/vendor/glightbox/css/glightbox.min.css"
       rel="stylesheet"
     />
-
-    <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
-
-    <!-- =======================================================
-  * Template Name: Kelly
-  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
   </head>
-
   <body class="services-page">
     <header
       id="header"
       class="header d-flex align-items-center light-background sticky-top"
+      aria-label="Site header"
     >
       <div
-        class="container-fluid position-relative d-flex align-items-center justify-content-between"
+        class="container-fluid d-flex align-items-center justify-content-between"
       >
         <a
           href="index.html"
           class="logo d-flex align-items-center me-auto me-xl-0"
+          aria-label="Homepage"
         >
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/logo.svg" alt="" />
-          <!-- <h1 class="sitename">S</h1> -->
+          <img src="assets/img/logo.svg" alt="Sanaz Habibi Logo" />
         </a>
 
-        <nav id="navmenu" class="navmenu">
+        <nav id="navmenu" class="navmenu" aria-label="Main Navigation">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="resume.html">Resume</a></li>
-            <li><a href="services.html" class="active">Services</a></li>
+            <li>
+              <a href="services.html" class="active" aria-current="page"
+                >Services</a
+              >
+            </li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          <button
+            class="mobile-nav-toggle d-xl-none"
+            aria-label="Toggle navigation menu"
+          >
+            <i class="bi bi-list" aria-hidden="true"></i>
+          </button>
         </nav>
 
-        <div class="header-social-links">
-          <a
-            href="https://www.instagram.com/sani.hb/?hl=en"
-            target="_blank"
-            class="instagram"
-            ><i class="bi bi-instagram"></i
-          ></a>
+        <div class="header-social-links" aria-label="Social Media Links">
           <a
             href="https://linkedin.com/in/sanaz-habibi"
             target="_blank"
-            class="linkedin"
-            ><i class="bi bi-linkedin"></i
-          ></a>
+            aria-label="LinkedIn Profile"
+          >
+            <i class="bi bi-linkedin" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
     </header>
 
-    <main class="main">
-      <!-- Services Section -->
-      <section id="services" class="services section">
-        <!-- Section Title -->
+    <main id="main-content" class="main" role="main">
+      <section
+        id="services"
+        class="services section"
+        aria-labelledby="services-heading"
+      >
         <div class="container section-title" data-aos="fade-up">
-          <h2>Services</h2>
+          <h2 id="services-heading">Services</h2>
           <p>
             Design solutions that connect brands with people — beautifully,
             effectively, and strategically.
           </p>
         </div>
-        <!-- End Section Title -->
 
         <div class="container">
           <div class="row gy-4">
-            <div
+            <article
               class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
+              aria-label="Brand Identity Design"
             >
-              <div class="service-item item-cyan position-relative">
+              <div
+                class="service-item item-cyan position-relative"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <div class="icon">
-                  <!-- Decorative SVG + Icon -->
                   <svg
                     width="100"
                     height="100"
                     viewBox="0 0 600 600"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path fill="#f5f5f5" d="M300,521.001683..."></path>
+                    <path fill="#f5f5f5" d="M300,521.001683..." />
                   </svg>
-                  <i class="bi bi-palette"></i>
+                  <i class="bi bi-palette" aria-hidden="true"></i>
                 </div>
-                <a href="#" class="stretched-link">
-                  <h3>Brand Identity Design</h3>
-                </a>
+                <h3>Brand Identity Design</h3>
                 <p>
                   Crafting memorable logos, color palettes, and visual systems
                   that reflect your brand’s personality and build recognition.
                 </p>
               </div>
-            </div>
+            </article>
 
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="service-item item-orange position-relative">
+            <article class="col-lg-4 col-md-6" aria-label="UI/UX Design">
+              <div
+                class="service-item item-orange position-relative"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 <div class="icon">
                   <svg
                     width="100"
@@ -149,26 +146,27 @@
                     viewBox="0 0 600 600"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path fill="#f5f5f5" d="M300,582.069752..."></path>
+                    <path fill="#f5f5f5" d="M300,582.069752..." />
                   </svg>
-                  <i class="bi bi-columns-gap"></i>
+                  <i class="bi bi-columns-gap" aria-hidden="true"></i>
                 </div>
-                <a href="#" class="stretched-link">
-                  <h3>UI/UX Design</h3>
-                </a>
+                <h3>UI/UX Design</h3>
                 <p>
                   Designing user-first digital experiences that are intuitive,
                   responsive, and accessible across web and mobile platforms.
                 </p>
               </div>
-            </div>
+            </article>
 
-            <div
+            <article
               class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
+              aria-label="Web Design & Development"
             >
-              <div class="service-item item-teal position-relative">
+              <div
+                class="service-item item-teal position-relative"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
                 <div class="icon">
                   <svg
                     width="100"
@@ -176,26 +174,27 @@
                     viewBox="0 0 600 600"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path fill="#f5f5f5" d="M300,541.506733..."></path>
+                    <path fill="#f5f5f5" d="M300,541.506733..." />
                   </svg>
-                  <i class="bi bi-browser-chrome"></i>
+                  <i class="bi bi-browser-chrome" aria-hidden="true"></i>
                 </div>
-                <a href="#" class="stretched-link">
-                  <h3>Web Design & Development</h3>
-                </a>
+                <h3>Web Design & Development</h3>
                 <p>
                   Creating clean, modern, and functional websites — from concept
                   to clickable layout — using WordPress, Divi, and Figma.
                 </p>
               </div>
-            </div>
+            </article>
 
-            <div
+            <article
               class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="400"
+              aria-label="Social Media Content"
             >
-              <div class="service-item item-red position-relative">
+              <div
+                class="service-item item-red position-relative"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
                 <div class="icon">
                   <svg
                     width="100"
@@ -203,26 +202,27 @@
                     viewBox="0 0 600 600"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path fill="#f5f5f5" d="M300,503.463883..."></path>
+                    <path fill="#f5f5f5" d="M300,503.463883..." />
                   </svg>
-                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-instagram" aria-hidden="true"></i>
                 </div>
-                <a href="#" class="stretched-link">
-                  <h3>Social Media Content</h3>
-                </a>
+                <h3>Social Media Content</h3>
                 <p>
                   Designing scroll-stopping graphics, animations, and templates
                   tailored for Instagram, LinkedIn, and digital campaigns.
                 </p>
               </div>
-            </div>
+            </article>
 
-            <div
+            <article
               class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="500"
+              aria-label="Marketing & Campaign Design"
             >
-              <div class="service-item item-indigo position-relative">
+              <div
+                class="service-item item-indigo position-relative"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
                 <div class="icon">
                   <svg
                     width="100"
@@ -230,26 +230,27 @@
                     viewBox="0 0 600 600"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path fill="#f5f5f5" d="M300,532.354287..."></path>
+                    <path fill="#f5f5f5" d="M300,532.354287..." />
                   </svg>
-                  <i class="bi bi-megaphone"></i>
+                  <i class="bi bi-megaphone" aria-hidden="true"></i>
                 </div>
-                <a href="#" class="stretched-link">
-                  <h3>Marketing & Campaign Design</h3>
-                </a>
+                <h3>Marketing & Campaign Design</h3>
                 <p>
                   Bringing concepts to life with digital and print assets like
                   posters, banners, emails, and billboards that get noticed.
                 </p>
               </div>
-            </div>
+            </article>
 
-            <div
+            <article
               class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="600"
+              aria-label="Communication Design"
             >
-              <div class="service-item item-pink position-relative">
+              <div
+                class="service-item item-pink position-relative"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
                 <div class="icon">
                   <svg
                     width="100"
@@ -257,63 +258,64 @@
                     viewBox="0 0 600 600"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path fill="#f5f5f5" d="M300,566.797414..."></path>
+                    <path fill="#f5f5f5" d="M300,566.797414..." />
                   </svg>
-                  <i class="bi bi-chat-dots"></i>
+                  <i class="bi bi-chat-dots" aria-hidden="true"></i>
                 </div>
-                <a href="#" class="stretched-link">
-                  <h3>Communication Design</h3>
-                </a>
+                <h3>Communication Design</h3>
                 <p>
                   Helping businesses tell their story clearly and creatively
                   across platforms — from pitch decks to internal reports.
                 </p>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
-      <!-- /Services Section -->
     </main>
 
-    <footer id="footer" class="footer light-background">
+    <footer id="footer" class="footer light-background" aria-label="Footer">
       <div class="container">
         <div class="copyright text-center">
           <p>
-            © <span>Copyright</span>
+            &copy; <span>Copyright</span>
             <strong class="px-1 sitename">Sani</strong>
-            <span>All Rights Reserved<br /></span>
+            <span>All Rights Reserved</span>
           </p>
         </div>
-        <div class="social-links d-flex justify-content-center">
+        <div
+          class="social-links d-flex justify-content-center"
+          aria-label="Footer Social Links"
+        >
           <a
             href="https://www.instagram.com/sani.hb/?hl=en"
             target="_blank"
-            class="instagram"
-            ><i class="bi bi-instagram"></i
-          ></a>
+            aria-label="Instagram"
+          >
+            <i class="bi bi-instagram" aria-hidden="true"></i>
+          </a>
           <a
             href="https://linkedin.com/in/sanaz-habibi"
             target="_blank"
-            class="linkedin"
-            ><i class="bi bi-linkedin"></i
-          ></a>
+            aria-label="LinkedIn"
+          >
+            <i class="bi bi-linkedin" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
     </footer>
 
-    <!-- Scroll Top -->
     <a
       href="#"
       id="scroll-top"
       class="scroll-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+      aria-label="Scroll to top"
+    >
+      <i class="bi bi-arrow-up-short" aria-hidden="true"></i>
+    </a>
 
-    <!-- Preloader -->
-    <div id="preloader"></div>
+    <div id="preloader" aria-hidden="true"></div>
 
-    <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
@@ -323,8 +325,6 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-    <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>

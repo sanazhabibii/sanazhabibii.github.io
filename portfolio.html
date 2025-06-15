@@ -2,12 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Sanaz Habibi</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <meta
+      name="description"
+      content="Sanaz Habibi's professional portfolio showcasing graphic design, branding, UI/UX, and marketing campaigns."
+    />
+    <meta
+      name="keywords"
+      content="Sanaz Habibi, Portfolio, Graphic Design, UI UX, Branding, Web Design"
+    />
 
-    <!-- Favicons -->
     <link href="assets/img/logo.svg" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
@@ -15,11 +20,11 @@
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Vendor CSS Files -->
+    <!-- Vendor CSS -->
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
@@ -34,77 +39,72 @@
       href="assets/vendor/glightbox/css/glightbox.min.css"
       rel="stylesheet"
     />
-
-    <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
-
-    <!-- =======================================================
-  * Template Name: Kelly
-  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
   </head>
 
   <body class="portfolio-page">
     <header
       id="header"
       class="header d-flex align-items-center light-background sticky-top"
+      aria-label="Site header"
     >
       <div
-        class="container-fluid position-relative d-flex align-items-center justify-content-between"
+        class="container-fluid d-flex align-items-center justify-content-between"
       >
         <a
           href="index.html"
           class="logo d-flex align-items-center me-auto me-xl-0"
+          aria-label="Homepage"
         >
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/logo.svg" alt="" />
-          <!-- <h1 class="sitename">S</h1> -->
+          <img src="assets/img/logo.svg" alt="Sanaz Habibi Logo" />
         </a>
 
-        <nav id="navmenu" class="navmenu">
+        <nav id="navmenu" class="navmenu" aria-label="Main Navigation">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li>
+              <a href="portfolio.html" class="active" aria-current="page"
+                >Portfolio</a
+              >
+            </li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          <button
+            class="mobile-nav-toggle d-xl-none"
+            aria-label="Toggle navigation menu"
+          >
+            <i class="bi bi-list" aria-hidden="true"></i>
+          </button>
         </nav>
 
-        <div class="header-social-links">
-          <a
-            href="https://www.instagram.com/sani.hb/?hl=en"
-            target="_blank"
-            class="instagram"
-            ><i class="bi bi-instagram"></i
-          ></a>
+        <div class="header-social-links" aria-label="Social Media Links">
           <a
             href="https://linkedin.com/in/sanaz-habibi"
             target="_blank"
-            class="linkedin"
-            ><i class="bi bi-linkedin"></i
-          ></a>
+            aria-label="LinkedIn Profile"
+          >
+            <i class="bi bi-linkedin" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
     </header>
 
-    <main class="main">
-      <!-- Portfolio Section -->
-      <section id="portfolio" class="portfolio section">
-        <!-- Section Title -->
+    <main id="main-content" class="main" role="main">
+      <section
+        id="portfolio"
+        class="portfolio section"
+        aria-labelledby="portfolio-heading"
+      >
         <div class="container section-title" data-aos="fade-up">
-          <h2>Portfolio</h2>
+          <h2 id="portfolio-heading">Portfolio</h2>
           <p>
             A curated collection of my work showcasing creativity, attention to
             detail, and a passion for visual storytelling.
           </p>
         </div>
-        <!-- End Section Title -->
 
         <div class="container">
           <div
@@ -113,358 +113,291 @@
             data-layout="masonry"
             data-sort="original-order"
           >
-            <!-- End Portfolio Filters -->
-
             <div
               class="row gy-4 isotope-container"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <div
+              <!-- Accessible portfolio items repeated fully below -->
+              <!-- WoofCare -->
+              <article
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
               >
-                <img
-                  src="assets/img/portfolio/pet/1.png"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>WoofCare (Concept Clinic)</h4>
-                  <p>Responsive Web Design</p>
-                  <a
-                    href="assets/img/portfolio/pet/1.png"
-                    title="WoofCare (Concept Clinic)"
-                    data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-items/portfolio-details-pet.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
+                <a
+                  href="portfolio-items/portfolio-details-pet.html"
+                  class="portfolio-link"
+                  aria-label="WoofCare Concept Clinic - Responsive Web Design"
+                >
+                  <img
+                    src="assets/img/portfolio/pet/1.png"
+                    class="img-fluid portfolio-item-image"
+                    alt="Screenshot of WoofCare Concept Clinic website design"
+                  />
+                  <div class="portfolio-info">
+                    <h3>WoofCare (Concept Clinic)</h3>
+                    <p>Responsive Web Design</p>
+                  </div>
+                </a>
+              </article>
 
-              <div
+              <!-- Coral Design Studio -->
+              <article
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
               >
-                <img
-                  src="assets/img/portfolio/coral/1.png"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Coral Design Studio</h4>
-                  <p>UI Design / Interior Studio</p>
-                  <a
-                    href="assets/img/portfolio/coral/1.png"
-                    title=" Coral Design Studio"
-                    data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-items/portfolio-details-coral.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
+                <a
+                  href="portfolio-items/portfolio-details-coral.html"
+                  class="portfolio-link"
+                  aria-label="Coral Design Studio - UI Design for Interior Studio"
+                >
+                  <img
+                    src="assets/img/portfolio/coral/1.png"
+                    class="img-fluid portfolio-item-image"
+                    alt="UI design screenshot for Coral Design Studio interior branding"
+                  />
+                  <div class="portfolio-info">
+                    <h3>Coral Design Studio</h3>
+                    <p>UI Design / Interior Studio</p>
+                  </div>
+                </a>
+              </article>
 
-              <div
+              <!-- Qavo Cafe -->
+              <article
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
               >
-                <img
-                  src="assets/img/portfolio/quva/1.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Qavo Cafe</h4>
-                  <p>Brand Identity & Packaging Design</p>
-                  <a
-                    href="assets/img/portfolio/quva/1.jpg"
-                    title="Qavo Cafe"
-                    data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-items/portfolio-details-quva-coffee.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-              <div
+                <a
+                  href="portfolio-items/portfolio-details-quva-coffee.html"
+                  class="portfolio-link"
+                  aria-label="Qavo Cafe - Brand Identity and Packaging Design"
+                >
+                  <img
+                    src="assets/img/portfolio/quva/1.jpg"
+                    class="img-fluid portfolio-item-image"
+                    alt="Packaging design for Qavo Cafe coffee products"
+                  />
+                  <div class="portfolio-info">
+                    <h3>Qavo Cafe</h3>
+                    <p>Brand Identity & Packaging Design</p>
+                  </div>
+                </a>
+              </article>
+
+              <!-- Imperium Coffee -->
+              <article
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
               >
-                <img
-                  src="assets/img/portfolio/imper/1.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Imperium Coffee</h4>
-                  <p>Mobile App UI/UX Design</p>
-                  <a
-                    href="assets/img/portfolio/imper/1.jpg"
-                    title="Imperium Coffee"
-                    data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-items/portfolio-details-imper-coffee.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-              <div
+                <a
+                  href="portfolio-items/portfolio-details-imper-coffee.html"
+                  class="portfolio-link"
+                  aria-label="Imperium Coffee - Mobile App UI/UX Design"
+                >
+                  <img
+                    src="assets/img/portfolio/imper/1.jpg"
+                    class="img-fluid portfolio-item-image"
+                    alt="Mobile UI screens of Imperium Coffee app"
+                  />
+                  <div class="portfolio-info">
+                    <h3>Imperium Coffee</h3>
+                    <p>Mobile App UI/UX Design</p>
+                  </div>
+                </a>
+              </article>
+
+              <!-- Fermaksan -->
+              <article
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
               >
-                <img
-                  src="assets/img/portfolio/farmers/1.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Fermaksan Agricultural Equipment</h4>
-                  <p>Social Media Campaign Design</p>
-                  <a
-                    href="assets/img/portfolio/farmers/1.jpg"
-                    title="Fermaksan Agricultural Equipment"
-                    data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-items/portfolio-details-farmers.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-              <div
+                <a
+                  href="portfolio-items/portfolio-details-farmers.html"
+                  class="portfolio-link"
+                  aria-label="Fermaksan Agricultural Equipment - Social Media Campaign Design"
+                >
+                  <img
+                    src="assets/img/portfolio/farmers/1.jpg"
+                    class="img-fluid portfolio-item-image"
+                    alt="Social media graphics for Fermaksan agricultural equipment"
+                  />
+                  <div class="portfolio-info">
+                    <h3>Fermaksan Agricultural Equipment</h3>
+                    <p>Social Media Campaign Design</p>
+                  </div>
+                </a>
+              </article>
+
+              <!-- Soluxa Energy -->
+              <article
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
               >
-                <img
-                  src="assets/img/portfolio/green/1.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Soluxa Energy</h4>
-                  <p>Social Media Design / Green Energy Awareness</p>
-                  <a
-                    href="assets/img/portfolio/green/1.webp"
-                    title="Soluxa Energy"
-                    data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-items/portfolio-details-green.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-              <div
+                <a
+                  href="portfolio-items/portfolio-details-green.html"
+                  class="portfolio-link"
+                  aria-label="Soluxa Energy - Social Media Design for Green Energy Awareness"
+                >
+                  <img
+                    src="assets/img/portfolio/green/1.webp"
+                    class="img-fluid portfolio-item-image"
+                    alt="Green energy awareness campaign visuals for Soluxa Energy"
+                  />
+                  <div class="portfolio-info">
+                    <h3>Soluxa Energy</h3>
+                    <p>Social Media Design / Green Energy Awareness</p>
+                  </div>
+                </a>
+              </article>
+
+              <!-- Local NGO -->
+              <article
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
               >
-                <img
-                  src="assets/img/portfolio/clean/1.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Local NGO Campaign</h4>
-                  <p>Social Media Design / Community Engagement</p>
-                  <a
-                    href="assets/img/portfolio/clean/1.jpg"
-                    title="Local NGO Campaign"
-                    data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-items/portfolio-details-clean.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-              <div
+                <a
+                  href="portfolio-items/portfolio-details-clean.html"
+                  class="portfolio-link"
+                  aria-label="Local NGO Campaign - Social Media Design and Community Engagement"
+                >
+                  <img
+                    src="assets/img/portfolio/clean/1.jpg"
+                    class="img-fluid portfolio-item-image"
+                    alt="Local NGO campaign visuals for social good"
+                  />
+                  <div class="portfolio-info">
+                    <h3>Local NGO Campaign</h3>
+                    <p>Social Media Design / Community Engagement</p>
+                  </div>
+                </a>
+              </article>
+
+              <!-- Catalog Financial Services -->
+              <article
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
               >
-                <img
-                  src="assets/img/portfolio/finance/1.jpg"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Catalog Financial Services</h4>
-                  <p>UI/UX Design / Web App Interface</p>
-                  <a
-                    href="assets/img/portfolio/finance/1.jpg"
-                    title="Catalog Financial Services "
-                    data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-items/portfolio-details-finance.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-              <div
+                <a
+                  href="portfolio-items/portfolio-details-finance.html"
+                  class="portfolio-link"
+                  aria-label="Catalog Financial Services - UI/UX Design for Financial Web App"
+                >
+                  <img
+                    src="assets/img/portfolio/finance/1.jpg"
+                    class="img-fluid portfolio-item-image"
+                    alt="Financial web app interface design for Catalog Services"
+                  />
+                  <div class="portfolio-info">
+                    <h3>Catalog Financial Services</h3>
+                    <p>UI/UX Design / Web App Interface</p>
+                  </div>
+                </a>
+              </article>
+
+              <!-- Panto Interiors -->
+              <article
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
               >
-                <img
-                  src="assets/img/portfolio/wood/4.webp"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Panto Interiors</h4>
-                  <p>Web UI/UX Design – Interior Design Studio</p>
-                  <a
-                    href="assets/img/portfolio/wood/4.webp"
-                    title="Panto Interiors "
-                    data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-items/portfolio-details-wood.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-              <div
+                <a
+                  href="portfolio-items/portfolio-details-wood.html"
+                  class="portfolio-link"
+                  aria-label="Panto Interiors - Web UI/UX Design for Interior Design Studio"
+                >
+                  <img
+                    src="assets/img/portfolio/wood/4.webp"
+                    class="img-fluid portfolio-item-image"
+                    alt="Homepage design for Panto Interiors website"
+                  />
+                  <div class="portfolio-info">
+                    <h3>Panto Interiors</h3>
+                    <p>Web UI/UX Design – Interior Design Studio</p>
+                  </div>
+                </a>
+              </article>
+
+              <!-- Good Luck Beer Co. -->
+              <article
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
               >
-                <img
-                  src="assets/img/portfolio/beer/1.png"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Good Luck Beer Co. (Concept Brand)</h4>
-                  <p>Social Media Design</p>
-                  <a
-                    href="assets/img/portfolio/beer/1.png"
-                    title="Good Luck Beer Co. (Concept Brand) "
-                    data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-items/portfolio-details-beer.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-              <div
+                <a
+                  href="portfolio-items/portfolio-details-beer.html"
+                  class="portfolio-link"
+                  aria-label="Good Luck Beer Co. Concept Brand - Social Media Design"
+                >
+                  <img
+                    src="assets/img/portfolio/beer/1.png"
+                    class="img-fluid portfolio-item-image"
+                    alt="Concept branding visuals for Good Luck Beer Co."
+                  />
+                  <div class="portfolio-info">
+                    <h3>Good Luck Beer Co. (Concept Brand)</h3>
+                    <p>Social Media Design</p>
+                  </div>
+                </a>
+              </article>
+
+              <!-- Dessert Shop -->
+              <article
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
               >
-                <img
-                  src="assets/img/portfolio/dessert/1.png"
-                  class="img-fluid"
-                  alt=""
-                />
-                <div class="portfolio-info">
-                  <h4>Dessert Shop – Product Promo Ads</h4>
-                  <p>Social Media / Product Marketing</p>
-                  <a
-                    href="assets/img/portfolio/dessert/1.png"
-                    title="Dessert Shop – Product Promo Ads"
-                    data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"
-                    ><i class="bi bi-zoom-in"></i
-                  ></a>
-                  <a
-                    href="portfolio-items/portfolio-details-dessert.html"
-                    title="More Details"
-                    class="details-link"
-                    ><i class="bi bi-link-45deg"></i
-                  ></a>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
+                <a
+                  href="portfolio-items/portfolio-details-dessert.html"
+                  class="portfolio-link"
+                  aria-label="Dessert Shop Product Promo Ads - Social Media and Marketing"
+                >
+                  <img
+                    src="assets/img/portfolio/dessert/1.png"
+                    class="img-fluid portfolio-item-image"
+                    alt="Dessert promotional ad design visuals for social media"
+                  />
+                  <div class="portfolio-info">
+                    <h3>Dessert Shop – Product Promo Ads</h3>
+                    <p>Social Media / Product Marketing</p>
+                  </div>
+                </a>
+              </article>
             </div>
-            <!-- End Portfolio Container -->
           </div>
         </div>
       </section>
-      <!-- /Portfolio Section -->
     </main>
 
-    <footer id="footer" class="footer light-background">
+    <footer id="footer" class="footer light-background" aria-label="Footer">
       <div class="container">
         <div class="copyright text-center">
           <p>
-            © <span>Copyright</span>
+            &copy; <span>Copyright</span>
             <strong class="px-1 sitename">Sani</strong>
-            <span>All Rights Reserved<br /></span>
+            <span>All Rights Reserved</span>
           </p>
         </div>
-        <div class="social-links d-flex justify-content-center">
+        <div
+          class="social-links d-flex justify-content-center"
+          aria-label="Footer Social Links"
+        >
           <a
             href="https://www.instagram.com/sani.hb/?hl=en"
             target="_blank"
-            class="instagram"
-            ><i class="bi bi-instagram"></i
-          ></a>
+            aria-label="Instagram"
+          >
+            <i class="bi bi-instagram" aria-hidden="true"></i>
+          </a>
           <a
             href="https://linkedin.com/in/sanaz-habibi"
             target="_blank"
-            class="linkedin"
-            ><i class="bi bi-linkedin"></i
-          ></a>
+            aria-label="LinkedIn"
+          >
+            <i class="bi bi-linkedin" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
     </footer>
 
-    <!-- Scroll Top -->
     <a
       href="#"
       id="scroll-top"
       class="scroll-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+      aria-label="Scroll to top"
+    >
+      <i class="bi bi-arrow-up-short" aria-hidden="true"></i>
+    </a>
 
-    <!-- Preloader -->
-    <div id="preloader"></div>
+    <div id="preloader" aria-hidden="true"></div>
 
-    <!-- Vendor JS Files -->
+    <!-- Vendor JS -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
@@ -474,8 +407,6 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-    <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>
